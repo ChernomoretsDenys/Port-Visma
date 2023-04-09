@@ -1,36 +1,56 @@
 //<Null file>-------------------------------------------------------------------------------------------------------
 @import "rubOutStyle";
 //<Fonts>-------------------------------------------------------------------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 //<Font family>-------------------------------------------------------------------------------------------------------
 
 //<Variables>-------------------------------------------------------------------------------------------------------
 
-
-
+html,
 body {
-    font-family: 'PT Sans';
+    font-family: "PT Sans";
 }
 //<Shell>-------------------------------------------------------------------------------------------------------
-.wrapper {width:100%; min-height: 100%; overflow: hidden; display: flex; flex-direction: column;}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
 //<Shell>-------------------------------------------------------------------------------------------------------
 .container {
     max-width: 1296px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 a {
     text-decoration: none;
     color: black;
 }
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
     margin: 40px 0;
 }
 .content {
     flex: 1 1 auto;
 }
 .header__row {
+    position: relative;
     display: flex;
     justify-content: space-between;
+
+    align-items: center;
+}
+.header__burger {
+    display: none;
+}
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
 }
 .header__row-items ul {
     display: flex;
@@ -44,7 +64,7 @@ a {
     margin: 0px 0px 0px 0px;
 }
 .header__row-items ul li a:hover {
-    color: #3D348B;
+    color: #3d348b;
     font-weight: 700;
 }
 .header__row-input {
@@ -58,120 +78,115 @@ a {
     border: none;
     background: none;
 }
-
-
-
-
-
-
-
-.header__row-lang {
-}
-.header__lang {
-}
-.main {
-}
-.navigation {
-}
-
 .main ul li button {
-    font-size: inherit;
     border: none;
     background-color: transparent;
     cursor: pointer;
     width: 100%;
 }
 .main ul li a {
-   display: block;
-   color: inherit;
-   text-decoration: none;
+    display: block;
+    text-decoration: none;
 }
-.main ul li a, .main ul li button {
-  padding: 5px 10px;
-  text-align: left;
+.main ul li a,
+.main ul li button {
+    padding: 5px 10px;
+    text-align: center;
 }
 .menu {
     position: absolute;
-  top: 3.2rem;
-  left: 0;
-  right: 0;
-  
-  /*  hide dropdown on small screens  */
-  visibility: hidden;
-  /*  smooth transitioning  */
-  transform: translateY(-1em);
-  transition: transform ease 0.2s;
-}
-.arrow {
+    top: 50px;
+    visibility: hidden;
+    transform: translateY(-1em);
+    transition: transform ease 0.5s;
 }
 .dropdown {
-     padding: 2px 1.5rem;
-  height: 0;
-  overflow: hidden;
-  transition: height ease 0.2s;
+    padding: 5px 1.5rem;
+    height: 0;
+    overflow: hidden;
+    transition: height ease 0.6s;
 }
 .main li:focus-within .dropdown {
-  height: 135px;
+    height: 100px;
 }
 .arrow {
-  width: 0.5em;
-  height: 0.5em;
-  display: inline-block;
-  vertical-align: middle;
-  border-left: 0.15em solid currentColor;
-  border-bottom: 0.15em solid currentColor;
-  transform: rotate(-45deg);
-  margin-left: 0.38em;
-  margin-top: -0.25em;
-  transition: transform 100ms ease-in-out;
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 0.15em solid #5db7de;
+    border-bottom: 0.15em solid #5db7de;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    margin-top: -6px;
+    transition: transform 0.3s ease-in-out;
 }
 .main li:focus-within > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 4px;
-}
-@media (min-width: 640px) {
-  
- 
-  
-  .menu {
-    position: static;
-    visibility: visible;
-    background: #fff;
-    display: flex;
-    transform: initial;
-  }
-  
-  
-  
-  .main ul li {
-    position: relative;
-    font-size: 14px;
-  }
-  
-  .main ul li a:hover,
- .main ul li button:hover {
-    background-color: #f2f2f2;
-  }
-  
-  .dropdown {
-    position: absolute;
-    right: 0;
-    left: auto;
-    box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-    0 4px 6px -2px rgba(71, 63, 79, 0.16);
-    z-index: 99;
-    min-width: 10rem;
-    padding: 0;
-    background-color: #fff;
-    border-radius: 0 0 0.5rem 0.5rem; 
-  }
-  
- .main ul li:hover .dropdown {
-    height: 135px;
-  }
-  
-  .main ul li:hover > button > .arrow {
     transform: rotate(-225deg);
-    margin-top: 4px;
-  }
+    margin-top: 5px;
+}
+@media (min-width: 20px) {
+    .menu {
+        position: static;
+        visibility: visible;
+        background: #fff;
+        display: flex;
+        transform: initial;
+    }
+    .main ul li {
+        position: relative;
+        font-size: 14px;
+    }
+    .main ul li a:hover,
+    .main ul li button:hover {
+        background-color: #f7f4f4;
+    }
+    .dropdown {
+        position: absolute;
+        right: 0;
+        left: auto;
+        box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08), 0 4px 6px -2px rgba(71, 63, 79, 0.16);
+        z-index: 100;
+        min-width: 80px;
+        padding: 0;
+        background-color: #fff;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .main ul li:hover .dropdown {
+        height: 100px;
+    }
+    .main ul li:hover > button > .arrow {
+        transform: rotate(-225deg);
+        margin-top: 4px;
+    }
+}
+@media (max-width: 1020px) {
+    .header__img img {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .header__row {
+        max-width: 530px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .header__row-items {
+        flex: 0 1 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    .header__row-search {
+        flex: 0 1 50%;
+    }
+    .header__row-lang {
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 530px) {
+    .header__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
