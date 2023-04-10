@@ -73,11 +73,7 @@ a {
 }
 
 .header {
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
   margin: 40px 0;
 }
 
@@ -303,4 +299,68 @@ a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.introduction {
+  background: url("../../img/backgrounds/Rectangle 23.png") 50%/auto no-repeat;
+}
+
+.introduction__row {
+  padding: 113px 0px 113px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction__header {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  font-size: 50px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.introduction__description {
+  margin: 40px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.introduction__button {
+  margin: 64px 0px 0px 0px;
+  display: inline-block;
+}
+
+.introduction__text {
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 0px 0px 0px;
+}
+
+.introduction__circle {
+  border: 2px solid #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 0px 0px 15px;
+}
+
+.introduction__circle span {
+  margin: 0px 0px 0px 5px;
 }
