@@ -39,9 +39,6 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-.header__burger {
-    display: none;
-}
 .header__list {
     display: flex;
     position: relative;
@@ -179,6 +176,7 @@ a {
         flex: 0 1 50%;
     }
 }
+
 @media (max-width: 530px) {
     .header__list {
         display: flex;
@@ -199,10 +197,10 @@ a {
     display: flex;
 }
 .introduction__port {
+    margin: 0px 250px 0px 0px;
 }
 .introduction__header {
     align-self: stretch;
-
     font-size: 50px;
     line-height: 140%;
     color: #ffffff;
@@ -238,21 +236,72 @@ a {
     margin: 0px 0px 0px 5px;
 }
 .introduction__button:hover {
-
 }
-
-
-
 
 .introduction__grid {
 }
 .universal__grid {
+    display: grid;
+    grid-template-columns: minmax(306px, 1fr) minmax(306px, 1fr);
+    grid-template-rows: minmax(205px, 1fr) minmax(205px, 1fr);
 }
 .universal__grid-item {
+    background-color: #5db7de;
+    border-radius: 10px;
+    color: #fff;
 }
 .universal__grid-item-big {
+    margin: 0px 24px 24px 0px;
 }
 .universal__grid-text {
+    margin: 30px 35px 118px 35px;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 .universal__grid-description {
+    margin: 0px 35px 30px 35px;
+}
+@media (max-width: 1300px) {
+    .header {
+        margin-bottom: -80px;
+    }
+    .introduction__port {
+        max-width: 600px;
+        margin: 0px 0px 0px 0px;
+    }
+    .introduction__header {
+        margin-bottom: -30px;
+    }
+    .introduction__description {
+        margin-bottom: -30px;
+    }
+    .introduction__button {
+        margin-bottom: 30px;
+    }
+    .introduction__row {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .universal__grid {
+        display: grid;
+        grid-template-columns: minmax(306px, 306px) minmax(306px, 306px);
+        grid-template-rows: minmax(205px, 205px) minmax(205px, 205px);
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        margin-bottom: -110px;
+    }
+}
+@media (max-width: 590px) {
+    .header {
+        margin-bottom: -140px;
+    }
+}
+@media (max-width: 520px) {
+    .header {
+        margin-bottom: -170px;
+    }
 }
