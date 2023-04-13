@@ -176,14 +176,12 @@ a {
         flex: 0 1 50%;
     }
 }
-
 @media (max-width: 530px) {
     .header__list {
         display: flex;
         flex-wrap: wrap;
     }
 }
-
 .main {
     display: flex;
     flex-direction: column;
@@ -215,7 +213,6 @@ a {
     margin: 64px 0px 0px 0px;
     display: inline-block;
 }
-
 .introduction__text {
     letter-spacing: 0.1em;
     font-size: 16px;
@@ -231,14 +228,15 @@ a {
     border-radius: 50%;
     display: inline-block;
     margin: 0px 0px 0px 15px;
+    transition: all 0.5s ease-in-out;;
 }
 .introduction__circle span {
     margin: 0px 0px 0px 5px;
 }
 .introduction__button:hover {
-}
-
-.introduction__grid {
+    .introduction__circle {
+        transform: translate(45px, 0px);
+    }
 }
 .universal__grid {
     display: grid;
@@ -250,7 +248,7 @@ a {
     border-radius: 10px;
     color: #fff;
 }
-.universal__grid-item-big {
+.universal__grid-item {
     margin: 0px 24px 24px 0px;
 }
 .universal__grid-text {
@@ -289,19 +287,79 @@ a {
         grid-template-columns: minmax(306px, 306px) minmax(306px, 306px);
         grid-template-rows: minmax(205px, 205px) minmax(205px, 205px);
     }
+    .universal__grid-text {
+        margin: 20px 35px 90px 35px;
+    }
+    .universal__grid-description {
+        margin: 0px 35px 30px 35px;
+    }
 }
 @media (max-width: 700px) {
     .header {
-        margin-bottom: -110px;
+        margin-bottom: -80px;
+    }
+    .universal__grid {
+        display: flex;
+        flex-direction: column;        
+    }
+    .universal__grid-text {
+        margin: 10px 35px 20px 35px;
+    }
+    .universal__grid-description {
+        margin: 0px 35px 20px 35px;
     }
 }
 @media (max-width: 590px) {
     .header {
-        margin-bottom: -140px;
+        margin-bottom: -70px;
     }
 }
 @media (max-width: 520px) {
     .header {
-        margin-bottom: -170px;
+        margin-bottom: -100px;
     }
 }
+@media (max-width: 460px) {
+    .header {
+        margin-bottom: -100px;
+    }
+    .universal__grid-text {
+        margin: 10px 35px 10px 35px;
+    }
+    .universal__grid-description {
+        margin: 0px 35px 10px 35px;
+    }
+}
+
+
+.service {
+
+}
+
+.service__row {
+    display: flex;
+    margin: 150px 0;
+}
+.service__header {
+}
+.service__head {
+}
+.universal__head {
+}
+.service__files {
+}
+.service__file {
+}
+.service__grid {
+}
+.universal__grid {
+}
+.universal__grid-item {
+}
+.universal__grid-item-big {
+}
+.universal__grid-text {
+}
+.universal__grid-description {
+}
+
