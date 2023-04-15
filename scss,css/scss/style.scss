@@ -121,9 +121,12 @@ a {
 }
 .dropdown {
     padding: 5px 1.5rem;
-    height: 0;
+    height: 0px;
     overflow: hidden;
     transition: height ease 0.6s;
+}
+.dropdown li {
+    margin-bottom: -5px;
 }
 .main li:focus-within .dropdown {
     height: 100px;
