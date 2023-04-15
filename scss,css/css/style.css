@@ -289,7 +289,8 @@ a {
   margin: 64px 0px 0px 0px;
 }
 
-.introduction__text {
+.introduction__text span,
+.introduction__text a {
   color: #ffffff;
 }
 
@@ -563,7 +564,8 @@ li {
           align-items: center;
 }
 
-.news__text {
+.news__text span,
+.news__text a {
   color: #3D348B;
 }
 
@@ -591,10 +593,10 @@ li {
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  border-radius: 15px;
 }
 
 .news__grid-image:hover {
-  border-radius: 20px;
   -webkit-transform: scale(1.07, 1.07);
       -ms-transform: scale(1.07, 1.07);
           transform: scale(1.07, 1.07);
@@ -609,7 +611,6 @@ li {
   line-height: 140%;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 25px 0px 15px 0px;
 }
 
 .news__grid-header {
@@ -620,7 +621,6 @@ li {
 }
 
 .news__grid-text {
-  margin-top: 12px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -818,6 +818,12 @@ li {
     row-gap: 24px;
     margin: 0 auto;
   }
+  .news__grid-image {
+    max-width: 250px;
+  }
+  .news__button {
+    margin-right: 20px;
+  }
 }
 @media (max-width: 900px) {
   .header__row {
@@ -879,6 +885,33 @@ li {
   .about__text {
     max-width: 550px;
   }
+  .news__button {
+    margin-right: 50px;
+  }
+  .news__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news__grid-image {
+    max-width: 200px;
+  }
+  .news__row {
+    margin: 20px 0px 40px 15px;
+  }
+  .news__header {
+    margin: 0px 0px 20px 0px;
+  }
+  .news__grid-date {
+    margin: 5px 0px 5px 0px;
+  }
+  .news__grid-text {
+    margin-top: 5px;
+  }
 }
 @media (max-width: 590px) {
   .header {
@@ -939,6 +972,12 @@ li {
   }
   .universal__grid-description {
     margin: 0px 35px 10px 35px;
+  }
+  .news__circle {
+    display: none;
+  }
+  .news__button {
+    margin-right: 25px;
   }
 }
 @media (max-width: 450px) {
