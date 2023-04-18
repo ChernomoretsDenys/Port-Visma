@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -792,12 +791,29 @@ li {
 
 .breadcrumbs__list li {
   display: inline-block;
-  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  margin: 0px 0px 0px 0px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
 }
 
-.breadcrumbs__list li:after {
-  padding: 8px;
-  content: "/ ";
+.breadcrumbs__arrow::after {
+  content: url("../../img/icons/delta.svg");
+  margin: 0px 0px 0px 20px;
+}
+
+.breadcrumbs__arrow {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumbs__arrow:hover {
+  color: rgb(243, 173, 45);
 }
 
 @media (max-width: 1420px) {
@@ -931,6 +947,21 @@ li {
 .footer__upper {
     padding-left: 40px;
     padding-right: 60px;
+  }
+  .breadcrumbs {
+    margin-top: 100px;
+  }
+  .report__header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+  }
+  .report__first-universal {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333333;
   }
 }
 @media (max-width: 1200px) {
