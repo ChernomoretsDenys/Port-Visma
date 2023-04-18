@@ -515,6 +515,45 @@ li {
 .breadcrumbs__arrow:hover {
     color: rgb(243, 173, 45);
 }
+.report {
+    margin:0 auto;
+}
+.report__row {
+    max-width: 856px;
+    margin: 80px 0px 150px 0px;
+}
+.report__row ul {
+    list-style-position: inside;
+    margin-top: 10px;
+    list-style: circle;
+    margin-left: 15px
+}
+.report__row ol {
+    margin-top: 10px;
+    list-style: decimal;
+    margin-left: -5px;
+}
+.report__header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.report__first-universal {
+    margin: 0px 0px 60px 0px;
+}
+.report__first-universal:last-child {
+    margin: 0px 0px 0px 0px;
+}
+.report__first-universal {
+    font-size: 16px;
+    line-height: 140%;
+    color: #333333;
+}
+
+
+
 
 //Media ---------------------------------------------------------------
 @media (max-width: 1420px) {
@@ -613,32 +652,6 @@ li {
     }
     .breadcrumbs {
         margin-top: 100px;
-    }
-
-
-    
-    .report {
-    }
-
-    .report__row {
-    }
-    .report__header {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 140%;
-        text-align: center;
-    }
-    .report__first-block {
-    }
-    .report__first-universal {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
-        color: #333333;
-    }
-    .report__second-block {
-    }
-    .report__third-block {
     }
 }
 @media (max-width: 1200px) {
@@ -750,6 +763,22 @@ li {
     .footer__bottom-row {
         margin-bottom: 300px;
     }
+    .report__row {
+        margin: 0px 0px 20px 0px;
+    }
+    .report__header {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 60px;
+    }
+    .report__header {
+        margin-bottom: 20px;
+    }
+    .report__first-universal {
+        margin: 0px 0px 30px 0px;
+    }
 }
 @media (max-width: 900px) {
     .header__row {
@@ -779,6 +808,14 @@ li {
     }
     .footer__upper-location {
         margin: 0px 0px 20px 0px;
+    }
+    .report__header {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .report__row {
+        margin-left: 10px;
+        margin-right:10px ;
     }
 }
 @media (max-width: 850px) {
@@ -867,6 +904,9 @@ li {
     .about__query {
         max-width: 350px;
         margin-right: -30px;
+    }
+    .report__first-universal {
+        margin: 0px 0px 0px 0px;
     }
 }
 @media (max-width: 530px) {
