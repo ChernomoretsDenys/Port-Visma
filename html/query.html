@@ -85,52 +85,84 @@
                                         </div>
                                         <div class="form__measurement form__universal-deco">
                                             <label for="measurement" class="universal-label">ед. измерения *</label>
-
+                                            <select name="measurement" id="measurement">
+                                                <option value=""></option>
+                                                <option value="kg">KG</option>
+                                                <option value="t">T</option>
+                                                <option value="c">C</option>
+                                            </select>
                                         </div>
                                         <div class="form__direction form__universal-deco">
                                             <label for="direction" class="universal-label">Направление перевозки
                                                 *</label>
-
+                                            <select name="direction" id="direction">
+                                                <option value=""></option>
+                                                <option value="miami">Miami</option>
+                                                <option value="london">London</option>
+                                                <option value="madrid">Madrid</option>
+                                                <option value="ankara">Ankara</option>
+                                            </select>
                                         </div>
                                         <div class="form__destination form__universal-deco">
                                             <label for="destination" class="universal-label">Пункт назначения
                                                 перевозки</label>
-                                            <input type="text" name="" id="">
+                                            <input type="text" name="destination" id="destination">
                                         </div>
                                         <div class="form__period form__universal-deco">
                                             <label for="period" class="universal-label">Период поступления груза к
                                                 перевалке</label>
-
+                                                <select name="period" id="period">
+                                                    <option value=""></option>
+                                                    <option value="january">January</option>
+                                                    <option value="march">March</option>
+                                                    <option value="may">May</option>
+                                                </select>
                                         </div>
                                         <div class="form__to-gargo form__universal-deco">
                                             <label for="to-gargo" class="universal-label">Груз поступает в порт</label>
-
+                                            <select name="to-gargo" id="to-gargo">
+                                                <option value=""></option>
+                                                <option value="sydney">Sydney</option>
+                                                <option value="shanghai">Shanghai</option>
+                                                <option value="london">London</option>
+                                                <option value="madrid">Madrid</option>
+                                            </select>
                                         </div>
                                         <div class="form__from-gargo form__universal-deco">
                                             <label for="from-gargo" class="universal-label">Груз отправляется из
                                                 порта</label>
-
+                                                <select name="from-gargo" id="from-gargo">
+                                                    <option value=""></option>
+                                                    <option value="sydney">Sydney</option>
+                                                    <option value="shanghai">Shanghai</option>
+                                                    <option value="london">London</option>
+                                                    <option value="madrid">Madrid</option>
+                                                </select>
                                         </div>
                                         <div class="form__shipment-size form__universal-deco">
                                             <label for="shipment-size" class="universal-label">Размер судовой
                                                 партии</label>
-                                            <input type="text" name="" id="">
+                                            <input type="text" name="shipment-size" id="shipment-size">
                                         </div>
                                         <div class="form__gargo-danger form__universal-deco">
                                             <label for="gargo-danger" class="universal-label">Опасность груза
                                                 (класс)</label>
-                                            <input type="text" name="" id="">
+                                            <input type="text" name="gargo-danger" id="gargo-danger">
                                         </div>
                                         <div class="form__add-info form__universal-deco">
                                             <label for="add-info" class="universal-label">Дополнительная информация о
                                                 грузе:</label>
-                                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                                            <textarea name="add-info" id="add-info"></textarea>
                                         </div>
                                         <div class="form__add-file">
-                                            <label for="" class="universal-label"></label>
-
+                                            <label class="universal-label">Прикрепить файл</label>
+                                            <div class="form__add-choose">
+                                                <input type="file" name="add-file" id="add-file" class="form__file-input">
+                                                
+                                            </div>
                                         </div>
                                     </div>
+                                    <!--  -->
                                     <div class="form__message">
                                         <div class="form__universal-head">
                                             Просим сообщить:
@@ -161,7 +193,25 @@
                                                 <label for="" class="universal-label"></label>
                                                 <input type="" name="" id="">
                                             </div>
-                                            
+                                            <div class=" form__universal-deco">
+                                                <label for="" class="universal-label"></label>
+                                                <input type="" name="" id="">
+                                            </div>
+                                            <div class=" form__universal-deco">
+                                                <label for="" class="universal-label"></label>
+                                                <input type="" name="" id="">
+                                            </div>
+                                            <div class=" form__universal-deco">
+                                                <label for="" class="universal-label"></label>
+                                                <input type="" name="" id="">
+                                            </div>
+                                        </div>
+                                        <div class=" universal__button">
+                                            <div class="  universal__text"><a href="#"> о компании </a>
+                                                <div class="universal__circle">
+                                                    <span>→</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>

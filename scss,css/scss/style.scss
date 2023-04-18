@@ -516,7 +516,7 @@ li {
     color: rgb(243, 173, 45);
 }
 .report {
-    margin:0 auto;
+    margin: 0 auto;
 }
 .report__row {
     max-width: 856px;
@@ -526,7 +526,7 @@ li {
     list-style-position: inside;
     margin-top: 10px;
     list-style: circle;
-    margin-left: 15px
+    margin-left: 15px;
 }
 .report__row ol {
     margin-top: 10px;
@@ -552,8 +552,81 @@ li {
     color: #333333;
 }
 //<Query>-------------------------------------------------------------------------------------------------------
+.form {
+    margin: 80px 0px 150px 0px;
+}
+.form__row {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.form__query {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 30px;
+    grid-template-rows: repeat(6, 60px);
+}
+.form__universal-deco {
+    display: flex;
+    flex-direction: column;
+}
+.universal-label {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.universal-input {
+    min-height: 0px;
+}
+input[type="text"],
+select {
+    padding: 6px 0px;
+    margin-top: 20px;
+}
+textarea {
+    max-width: 410px;
+    min-height: 100px;
+}
 
 
+.form__file-input {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.form__add-choose {
+    margin-top: 20px;
+}
+.form__add-info {
+}
+.form__add-file {
+}
+
+.form__message {
+    margin: 120px 0px 0px 0px;
+}
+.form__universal-head {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 140%;
+    color: #333333;
+}
+.form__call-back {
+}
+.form__call-data {
+}
+.universal__button {
+}
+.universal__text {
+}
+.universal__circle {
+}
 
 //Media ---------------------------------------------------------------
 @media (max-width: 1420px) {
@@ -767,11 +840,11 @@ li {
         margin: 0px 0px 20px 0px;
     }
     .report__header {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 140%;
-    text-align: center;
-    margin-bottom: 60px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+        text-align: center;
+        margin-bottom: 60px;
     }
     .report__header {
         margin-bottom: 20px;
@@ -815,7 +888,7 @@ li {
     }
     .report__row {
         margin-left: 10px;
-        margin-right:10px ;
+        margin-right: 10px;
     }
 }
 @media (max-width: 850px) {
